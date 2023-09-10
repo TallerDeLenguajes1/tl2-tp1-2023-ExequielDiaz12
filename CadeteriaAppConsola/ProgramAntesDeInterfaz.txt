@@ -1,12 +1,3 @@
-﻿using CsvHelper;
-using CsvHelper.Configuration;
-using CsvHelper.TypeConversion;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-
 
     // Creo una instancia de Cadeteria
     Cadeteria cadeteria = new Cadeteria(1,"Mercado Libre","0800-888-9999");
@@ -44,7 +35,6 @@ using System.Linq;
 
     // Generar informe de actividad
     cadeteria.GenerarInformeActividad();
-    cadeteria.GuardarCadeteriaEnCSV("cadeteria.csv");
     
     
     /*

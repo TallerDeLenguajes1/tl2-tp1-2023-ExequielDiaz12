@@ -1,3 +1,7 @@
+using System.Globalization;
+using CsvHelper;
+using CsvHelper.Configuration;
+
 class Cadeteria
 {
     public int Id { get; set;}
@@ -7,6 +11,7 @@ class Cadeteria
     public List<Pedido> Pedidos { get; set; }
     public List<Cadete> Cadetes { get; set; }
 
+    public Cadeteria(){}
     public Cadeteria(int id, string nombre, string numeroTelefono)
     {
         Id = id;
@@ -49,5 +54,29 @@ class Cadeteria
 
         var pedidosPendientes = Pedidos.Count(pedido => pedido.Estado == EstadoPedido.Pendiente);
         Console.WriteLine($"Pedidos Pendientes: {pedidosPendientes}");
+    }
+
+    public void GuardarCadeteriaEnCSV(string filePath)
+    {
+        using (var writer = new StreamWriter(filePath))
+        using (var csv = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture)))
+        {
+            csv.WriteRecords(this.Clientes);
+            csv.WriteRecords(this.Pedidos);
+            csv.WriteRecords(this.Cadetes);
+        }
+    }
+
+    public static Cadeteria LeerCadeteriaDesdeCSV(string filePath)
+    {
+        var cadeteria = new Cadeteria();
+        using (var reader = new StreamReader(filePath))
+        using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))
+        {
+            cadeteria.Clientes.AddRange(csv.GetRecords<Cliente>());
+            cadeteria.Pedidos.AddRange(csv.GetRecords<Pedido>());
+            cadeteria.Cadetes.AddRange(csv.GetRecords<Cadete>());
+        }
+        return cadeteria;
     }
 }

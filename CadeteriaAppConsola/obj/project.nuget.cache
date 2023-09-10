@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7PXjZ6uKOCzvHdGk0D7Zq7ydXoeINGvFfjJZGC/9DL2mapUcIYtQfBdz0HoQM7mYoxSHeuju3++YRDph+oycCw==",
+  "dgSpecHash": "UM1+w1CfwiqRqu+9m8Xw4CkovHcU+Kx65XHEBpNsxTZ17h7bPjdJI0U5WQ+RjdVEBG7L/OunYJJv5BsJw+PFSg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\CadeteriaAppConsola.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

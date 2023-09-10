@@ -13,3 +13,5 @@ C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\Cadeter
 C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\obj\Debug\net7.0\CadeteriaAppConsola.pdb
 C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\obj\Debug\net7.0\CadeteriaAppConsola.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\obj\Debug\net7.0\ref\CadeteriaAppConsola.dll
+C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\bin\Debug\net7.0\CsvHelper.dll
+C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\obj\Debug\net7.0\CadeteriaAppConsola.csproj.CopyComplete

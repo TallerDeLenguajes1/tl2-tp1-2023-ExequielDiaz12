@@ -1,3 +1,7 @@
+using System.Globalization;
+using CsvHelper;
+using CsvHelper.Configuration;
+
 enum EstadoPedido
 {
     Pendiente,
@@ -12,6 +16,7 @@ class Pedido
     public Cadete CadeteAsignado { get; set; }
     public Cliente Cliente { get; set; }
 
+    public Pedido(){}//eso
     public Pedido(int id, string producto, string direccionEntrega, Cliente cliente)
     {
         Id = id;
@@ -40,5 +45,22 @@ class Pedido
         Console.WriteLine($"Nombre: {Cliente.Nombre}");
         Console.WriteLine($"Direccion: {Cliente.Direccion}");
         Console.WriteLine($"Telefono: {Cliente.NumeroTelefono}");
+    }
+
+    public void GuardarPedidoEnCSV(string filePath)
+    {
+        using (var writer = new StreamWriter(filePath))
+        using (var csv = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture)))
+        {
+            csv.WriteRecord(this);
+        }
+    }
+    public static Pedido LeerPedidoDesdeCSV(string filePath)
+    {
+        using (var reader = new StreamReader(filePath))
+        using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))
+        {
+            return csv.GetRecords<Pedido>().FirstOrDefault();
+        }
     }
 }
