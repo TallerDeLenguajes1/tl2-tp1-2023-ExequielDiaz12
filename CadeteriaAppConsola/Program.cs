@@ -36,22 +36,16 @@ using System.Linq;
     cadeteria.AgregarPedido(pedido2);
 
     // Asignar pedidos a cadetes
-    cadeteria.AsignarPedidoACadete(pedido1, cadete1);
-    cadeteria.AsignarPedidoACadete(pedido2, cadete2);
+    
+    cadeteria.AsignarCadeteAPedido(1,1);
+    cadeteria.AsignarCadeteAPedido(2, 2);
 
     // Cambiar estado de un pedido
     pedido1.CambiarEstadoPedido(EstadoPedido.Entregado);
 
     // Generar informe de actividad
-    cadeteria.GenerarInformeActividad();
+    
+    Console.WriteLine($"el jornal a caobrar de {cadete1.Nombre} es {cadeteria.JornalACobrar(1)}");
     cadeteria.GuardarCadeteriaEnCSV("cadeteria.csv");
     
     
-    /*
-    a) consideré hacer todas como agregacion porque no quisiera perder a clientes,cadetes ni pedidos en 
-    caso de que eliminara la cadeteria. Además, puede ser que los cadetes trabajen para varias cadeterias,
-    o que un cliente pertenezca a varias cadeterias.
-
-    b)
-    
-    */

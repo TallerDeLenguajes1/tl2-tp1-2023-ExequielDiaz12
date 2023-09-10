@@ -24,6 +24,7 @@ class Pedido
         DireccionEntrega = direccionEntrega;
         Estado = EstadoPedido.Pendiente;
         Cliente = cliente;
+        
     }
 
     public void CambiarEstadoPedido(EstadoPedido nuevoEstado)

@@ -8,7 +8,7 @@ class Cadete
     public string Direccion { get; set; }
     public string Nombre { get; set; }
     public string NumeroTelefono { get; set; }
-    public List<Pedido> Pedidos { get; set; }
+    //public List<Pedido> Pedidos { get; set; }
 
     public Cadete(){} //lo necesito por csvHelper
     public Cadete(int id, string direccion, string nombre, string numeroTelefono)
@@ -17,9 +17,9 @@ class Cadete
         Direccion = direccion;
         Nombre = nombre;
         NumeroTelefono = numeroTelefono;
-        Pedidos = new List<Pedido>();
+        //Pedidos = new List<Pedido>();
     }
-
+/*
     public void AgregarPedido(Pedido pedido)
     {
         Pedidos.Add(pedido);
@@ -36,7 +36,7 @@ class Cadete
         decimal jornal = pedidosEntregados * 500;
         return jornal;
     }
-
+*/
     public void GuardarCadeteEnCSV(string filePath)
     {
         using (var writer = new StreamWriter(filePath))

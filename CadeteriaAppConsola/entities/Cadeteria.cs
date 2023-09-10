@@ -38,22 +38,35 @@ class Cadeteria
         Pedidos.Add(pedido);
     }
 
-    public void AsignarPedidoACadete(Pedido pedido, Cadete cadete)
+    public void AsignarCadeteAPedido(int cadeteId, int pedidoId)
     {
-        pedido.ReasignarCadete(cadete);
-        cadete.AgregarPedido(pedido);
-    }
+        Cadete cadete = Cadetes.FirstOrDefault(c => c.Id == cadeteId);
+        Pedido pedido = Pedidos.FirstOrDefault(p => p.Id == pedidoId);
 
-    public void GenerarInformeActividad()
-    {
-        foreach (var cadete in Cadetes)
+        if (cadete == null)
         {
-            decimal jornal = cadete.CalcularJornal();
-            Console.WriteLine($"Cadete: {cadete.Nombre}, Jornal: ${jornal}");
+            throw new ArgumentException("Cadete no encontrado.");
         }
 
-        var pedidosPendientes = Pedidos.Count(pedido => pedido.Estado == EstadoPedido.Pendiente);
-        Console.WriteLine($"Pedidos Pendientes: {pedidosPendientes}");
+        if (pedido == null)
+        {
+            throw new ArgumentException("Pedido no encontrado.");
+        }
+
+        pedido.CadeteAsignado = cadete;
+    }
+
+    public decimal JornalACobrar(int cadeteId)
+    {
+        Cadete cadete = Cadetes.FirstOrDefault(c => c.Id == cadeteId);
+
+        if (cadete == null)
+        {
+            throw new ArgumentException("Cadete no encontrado.");
+        }
+
+        decimal jornal = Pedidos.Count(p => p.CadeteAsignado == cadete && p.Estado == EstadoPedido.Entregado) * 500;
+        return jornal;
     }
 
     public void GuardarCadeteriaEnCSV(string filePath)
