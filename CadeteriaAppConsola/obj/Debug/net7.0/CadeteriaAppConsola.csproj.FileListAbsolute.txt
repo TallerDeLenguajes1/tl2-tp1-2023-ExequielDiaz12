@@ -15,3 +15,7 @@ C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\Cadeter
 C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\obj\Debug\net7.0\ref\CadeteriaAppConsola.dll
 C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\bin\Debug\net7.0\CsvHelper.dll
 C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\obj\Debug\net7.0\CadeteriaAppConsola.csproj.CopyComplete
+C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\bin\Debug\net7.0\Serilog.dll
+C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\Usuario\OneDrive\Escritorio\RepoGIT\tl2-tp1-2023-ExequielDiaz12\CadeteriaAppConsola\bin\Debug\net7.0\Serilog.Sinks.File.dll

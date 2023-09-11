@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "UM1+w1CfwiqRqu+9m8Xw4CkovHcU+Kx65XHEBpNsxTZ17h7bPjdJI0U5WQ+RjdVEBG7L/OunYJJv5BsJw+PFSg==",
+  "dgSpecHash": "mfLwdUU6R+lLjHne0AymkK1edl5z5MVRIh6pnfN8B6RiaTxcuHKFKn8/nKjc3NxZ4zH2YUB5tqtaH69k2RjBbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\CadeteriaAppConsola.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\serilog\\3.0.2-dev-02044\\serilog.3.0.2-dev-02044.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\serilog.sinks.console\\4.2.0-dev-00918\\serilog.sinks.console.4.2.0-dev-00918.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\serilog.sinks.file\\5.0.1-dev-00947\\serilog.sinks.file.5.0.1-dev-00947.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Exequiel",
+    "Direccion": "Dirección1",
+    "NumeroTelefono": "123-456-7890",
+    "Pedidos": []
+  },
+  {
+    "Id": 2,
+    "Nombre": "Daiana",
+    "Direccion": "Dirección2",
+    "NumeroTelefono": "987-654-3210",
+    "Pedidos": []
+  }
+]
