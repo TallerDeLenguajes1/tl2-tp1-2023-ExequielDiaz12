@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\CadeteriaAppConsola.csproj": {}
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaLibreria\\CadeteriaLibreria\\CadeteriaLibreria.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\CadeteriaAppConsola.csproj": {
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaLibreria\\CadeteriaLibreria\\CadeteriaLibreria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\CadeteriaAppConsola.csproj",
-        "projectName": "CadeteriaAppConsola",
-        "projectPath": "c:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\CadeteriaAppConsola.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaLibreria\\CadeteriaLibreria\\CadeteriaLibreria.csproj",
+        "projectName": "CadeteriaLibreria",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaLibreria\\CadeteriaLibreria\\CadeteriaLibreria.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaAppConsola\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\RepoGIT\\tl2-tp1-2023-ExequielDiaz12\\CadeteriaLibreria\\CadeteriaLibreria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,28 +44,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "CsvHelper": {
-              "target": "Package",
-              "version": "[30.0.1, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "Serilog": {
-              "target": "Package",
-              "version": "[3.0.2-dev-02044, )"
-            },
-            "Serilog.Sinks.Console": {
-              "target": "Package",
-              "version": "[4.2.0-dev-00918, )"
-            },
-            "Serilog.Sinks.File": {
-              "target": "Package",
-              "version": "[5.0.1-dev-00947, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
